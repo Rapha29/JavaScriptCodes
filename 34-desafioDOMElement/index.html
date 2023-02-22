@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 1 dom na pratica</title>
+</head>
+<body>
+    <!--mude o texto do elemento html manupulando o DOM pelo id do elemento e
+    acrescente o texto novo chamado "sou o novo texto do elemento, utilizando a
+    função settimeout com o tempo de 5 segundos"-->
+    <p id="teste">Esse Texto ira mudar em 5 segundos</p>
+    <script>
+        setTimeout(() => {document.getElementById("teste").innerHTML =
+        "Sou o novo texto do elemento, utilizando a " + 
+        "função settimeout!"    
+}, 5000); 
+
+    </script>
+</body>
+</html>

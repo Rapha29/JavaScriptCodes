@@ -1,0 +1,36 @@
+:root{
+    --lightBlue: #95b8d1;
+    --mainWhite: #f6f6f6;
+    --mainBlack: #222222;
+}
+
+.max-height{
+    min-height: 100vh;
+}
+
+body{
+    background: var(--lightBlue);
+}
+
+.message-container{
+    background: var(--mainWhite);
+}
+.mensage-content{
+    color: var(--lightBlue);
+}
+#submitBtn{
+    background: var(--lightBlue);
+    color: var(--mainWhite);
+}
+#submitBtn:hover{
+    color: var(--lightBlue);
+    color: var(--mainBlack);
+    background: var(--mainWhite);
+    border: 1px solid var(--mainBlack)
+}
+.feedback{
+    display:none;
+}
+.show{
+    display: block;
+}

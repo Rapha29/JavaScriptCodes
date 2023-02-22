@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM - hasAttribute , getAttribute , setAttribute</title>
+</head>
+<body>
+    <h4>Trabalhando com hasAttribute , getAttribute , setAttribute</h4>
+    <ol>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    </ol>
+    <div id="testediv" attr-value="Valor do atributo">
+        <p>conteudo de um paragrafo</p>
+        <h1 class="titulo1">sou um h1</h1>
+        <h2>sou um h2</h2>
+        <div name="teste">Conteudo dentro de uma div</div>
+        <b3>h3 sou eu</b3>
+        <p id="teste2">sou um outro paragrafo qualquer</p>
+        <b5>sim sou um h5</b5>
+    </div>
+</body>
+</html>
+<script>
+var div = document.getElementById('testediv');
+// console.log(div.hasAttribute('id'));
+// console.log(div.getAttribute('attr-value'))
+
+if(div.hasAttribute('attr-value')){
+    console.log(div.getAttribute('attr-value'))
+}else{
+    console.log('não existe atributo no elemento selecionado')
+};
+
+var p = document.getElementById('teste2');
+p.setAttribute('style', 'display: none;');
+
+</script>
+

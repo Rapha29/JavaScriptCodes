@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manipulando Data e Hora </title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+</body>
+</html>
+
+<script>
+
+    var data = new Date();
+    console.log(data);
+    
+    console.log(data.getHours())
+    console.log(data.getMinutes())
+    console.log(data.getSeconds())
+
+    var datanova = new Date("March 31, 2023")
+
+    console.log(datanova);
+    
+    console.log(Date.parse(datanova));
+    console.log(new Date(1680231600000));
+    
+    console.log(datanova.getDate());
+    console.log(datanova.getMonth());
+
+    console.log(datanova.getFullYear());
+
+    console.log(datanova.getDate()+"/"+(datanova.getMonth()+1)+"/"+datanova.getFullYear());
+    console.log(datanova);
+    console.log(datanova.setDate(datanova.getDate()+10));
+    console.log(datanova);
+    
+    var diasSemana = ["domingo","Segunda","Terça","Quarta","Quinta","Sexta","Sabado"]
+    
+    console.log(diasSemana);
+
+    diasSemana[datanova.getDay()];
+
+    console.log(datanova);
+
+
+</script>

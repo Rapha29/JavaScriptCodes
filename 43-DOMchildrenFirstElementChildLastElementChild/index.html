@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>parentNode</title>
+</head>
+<body>
+    <h4>Trabalhando com children. firstelementchild, lastElementChild</h4>
+    <ol>
+        <li>Elemento 1</li>
+        <li>Elemento 2</li>
+        <li>Elemento 3</li>
+        <li>Elemento 4</li>
+    </ol>
+    <div>
+        <p></p>
+        <h1></h1>
+        <h2></h2>
+        <div></div>
+        <b3></b3>
+        <b5></b5>
+    </div>
+</body>
+</html>
+<script>
+
+    var test = document.querySelector('div').children;
+    var ol = document.querySelector('ol');
+    
+    test[0].innerHTML = 'Sou um paragrafo';
+    test[1].innerHTML = 'Sou um H1';
+    test[2].innerHTML = 'Sou um H2';
+    test[3].innerHTML = 'Sou uma div';
+    test[4].innerHTML = 'Sou um H3';
+    test[5].innerHTML = 'Sou um H5';
+
+    ol.firstElementChild.innerHTML ="Mudando o texto do elemento 1";
+    ol.lastElementChild.innerHTML ="Mudando o texto do elemento 4";
+
+</script>
+

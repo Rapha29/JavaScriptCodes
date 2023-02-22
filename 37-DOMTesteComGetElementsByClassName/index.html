@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Atividade 2 com classname</title>
+</head>
+<body>
+    <h1>Sou um titulo</h1>
+    <p class="p">sou um paragrafo</p>
+    <p class="p">sou um segundo paragrafo</p>
+</body>
+<script>
+    setTimeout(function(){
+        // console.log(document.getElementsByClassName('p')[0].innerHTML = 'Teste')
+        var p = document.getElementsByClassName('p');
+        p[1].innerText = 'Alterando segundo texto';
+        p[0].innerText = 'Alterando primeiro texto';
+    
+    },3000)
+</script>
+</html>
+

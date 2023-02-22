@@ -1,0 +1,44 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #ffffff;
+}
+.caixas{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px;
+    background: #f2f2f2;
+    border-radius: 5px;
+    
+}
+.caixas a{
+    width: 40px;
+    height: 40px;
+    float: left;
+    text-indent: -9999px;
+    margin: 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    
+}
+
+#vermelho{
+    background: #e74c3c;
+    
+}
+#azul{
+    background: #3498db;
+}
+#verde{
+    background: #2ecc71;
+}
+#cinza{
+    background: #95a5a6;
+}
+#amarelo{
+    background: #f1c40f;
+}
+#laranja{
+    background: #e67e22;
+}
